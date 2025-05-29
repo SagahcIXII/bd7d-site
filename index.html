@@ -1,43 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>BD7D Solutions</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BD7D Solutions</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <img src="img/logo.png" alt="Logo BD7D Solutions">
-        <h1>BD7D Solutions</h1>
-        <p>Desenvolvendo Soluções Inteligentes em Energia, Construção e Performance</p>
-    </header>
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#contato">Contato</a>
+  <header class="hero">
+    <img src="img/logo.png" alt="Logo BD7D" class="logo" />
+    <nav class="menu">
+      <a href="index.html">Sobre</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="contato.html">Contato</a>
+      <a href="artigos.html">Artigos e Notícias</a>
+      <a href="cases.html">Cases</a>
+      <a href="index-en.html" class="lang">EN</a>
     </nav>
-    <section id="sobre">
-        <h2>Sobre a BD7D Solutions</h2>
-        <p>Somos uma empresa especializada em entregar soluções inovadoras para os setores de energia, construção e performance industrial. Com expertise técnica e foco em resultados, impulsionamos a eficiência de nossos clientes.</p>
-        <p><strong>Missão:</strong> Desenvolver e implementar soluções eficientes e sustentáveis para nossos clientes.</p>
-        <p><strong>Visão:</strong> Ser referência nacional em soluções integradas de engenharia e performance até 2030.</p>
-        <p><strong>Valores:</strong> Excelência, Inovação, Compromisso, Sustentabilidade e Ética.</p>
-    </section>
-    <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <p><strong>🔌 Energia:</strong> Projetos elétricos, subestações, mercado livre de energia, eficiência energética e mais.</p>
-        <p><strong>🏗 Construção e Reformas:</strong> Execução e gerenciamento de obras, estrutura metálica, reformas e soluções em engenharia civil.</p>
-        <p><strong>⚙ Performance e Eficiência:</strong> Automação industrial, KPIs, melhoria de processos e desenvolvimento de soluções especiais.</p>
-    </section>
-    <section id="contato">
-        <h2>Fale Conosco</h2>
-        <p>Entre em contato conosco através do WhatsApp para saber mais:</p>
-        <a class="btn-whatsapp" href="https://wa.me/5592981649981" target="_blank">Chamar no WhatsApp</a>
-    </section>
-    <footer>
-        <p>&copy; 2025 BD7D Solutions. Todos os direitos reservados.</p>
-    </footer>
+  </header>
+
+  <section class="segmentos">
+    <h2>Nossos Segmentos</h2>
+    <div class="galeria">
+      <a href="segmento-performance.html">
+        <img src="img/segmento-performance.jpg" alt="Performance" />
+      </a>
+      <a href="segmento-construcao.html">
+        <img src="img/segmento-construcao.jpg" alt="Construção" />
+      </a>
+      <a href="segmento-eletrica.html">
+        <img src="img/segmento-eletrica.jpg" alt="Elétrica" />
+      </a>
+    </div>
+  </section>
+
+  <section class="formulario">
+    <h2>Fale Conosco</h2>
+    <form action="https://formsubmit.co/admin@bd7d.com" method="POST">
+      <input type="text" name="name" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="message" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <div class="whatsapp">
+    <a href="https://wa.me/5592981649981?text=Ol%C3%A1!+Vim+pelo+site+da+BD7D+Solutions." target="_blank">
+      💬 Fale conosco pelo WhatsApp
+    </a>
+  </div>
 </body>
 </html>
