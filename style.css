@@ -1,49 +1,89 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f7f7f7;
+    background: #fdfdfd;
+    color: #2c2c2c;
 }
+
 header {
-    background-color: #000;
+    background-color: #1F1F1F;
     color: #fff;
-    padding: 20px 0;
     text-align: center;
+    padding: 40px 20px 20px;
 }
+
 header img {
-    height: 80px;
+    height: 60px;
+    margin-bottom: 10px;
 }
+
+header h1 {
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+
+header p {
+    font-weight: 300;
+    margin: 0;
+    font-size: 1rem;
+}
+
 nav {
-    background: #333;
-    text-align: center;
+    background: #2C2C2C;
+    display: flex;
+    justify-content: center;
     padding: 10px 0;
 }
+
 nav a {
     color: white;
-    margin: 0 15px;
+    margin: 0 20px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
+    transition: 0.3s;
 }
+
+nav a:hover {
+    color: #00a86b;
+}
+
 section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-    background: #fff;
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    color: #1F1F1F;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
     margin-bottom: 20px;
 }
+
+section p {
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
 footer {
-    background-color: #222;
+    background-color: #1F1F1F;
     color: white;
     text-align: center;
     padding: 15px 0;
+    font-size: 0.9rem;
 }
+
 .btn-whatsapp {
     display: inline-block;
     background-color: #25D366;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 22px;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 10px;
 }
