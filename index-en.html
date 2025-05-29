@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,47 +7,46 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <img src="img/logo.png" alt="BD7D Logo" class="logo" />
-    <nav class="menu">
-      <a href="index-en.html">About</a>
-      <a href="services-en.html">Services</a>
-      <a href="contact-en.html">Contact</a>
-      <a href="articles-en.html">Articles & News</a>
-      <a href="cases-en.html">Cases</a>
-      <a href="index.html" class="lang">PT</a>
+  <header class="topo">
+    <div class="logo-area">
+      <img src="img/logo.png" alt="BD7D Logo" class="logo" />
+      <div class="saudacao">
+        <p>Hello! Welcome to BD7D Solutions</p>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#news">Articles & News</a></li>
+        <li><a href="#cases">Cases</a></li>
+        <li><a href="index.html">PT</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="segmentos">
-    <h2>Our Sectors</h2>
-    <div class="galeria">
-      <a href="segment-performance-en.html">
-        <img src="img/segmento-performance.jpg" alt="Performance" />
-      </a>
-      <a href="segment-construction-en.html">
-        <img src="img/segmento-construcao.jpg" alt="Construction" />
-      </a>
-      <a href="segment-electrical-en.html">
-        <img src="img/segmento-eletrica.jpg" alt="Electrical" />
-      </a>
-    </div>
-  </section>
+  <main>
+    <section class="segmentos">
+      <h2>Our Segments</h2>
+      <div class="segmentos-grid">
+        <img src="img/segmento-performance.jpg" alt="Performance">
+        <img src="img/segmento-construcao.jpg" alt="Civil Construction">
+        <img src="img/segmento-eletrica.jpg" alt="Electrical Engineering">
+      </div>
+    </section>
 
-  <section class="formulario">
-    <h2>Contact Us</h2>
-    <form action="https://formsubmit.co/admin@bd7d.com" method="POST">
-      <input type="text" name="name" placeholder="Your name" required>
-      <input type="email" name="email" placeholder="Your email" required>
-      <textarea name="message" placeholder="Your message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <div class="whatsapp">
-    <a href="https://wa.me/5592981649981?text=Hello!+I+came+from+the+BD7D+Solutions+website." target="_blank">
-      💬 Chat with us on WhatsApp
-    </a>
-  </div>
+    <section class="contato">
+      <h2>Contact Us</h2>
+      <form action="https://formsubmit.co/admin@bd7d.com" method="POST">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <input type="hidden" name="_subject" value="New message from BD7D website!" />
+        <input type="hidden" name="_autoresponse" value="We received your message! We will respond shortly." />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
