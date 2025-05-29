@@ -1,54 +1,100 @@
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
 }
-.hero {
-  background-color: #000;
-  text-align: center;
-  padding: 1em 0;
+
+.topo {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  flex-wrap: wrap;
 }
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .logo {
-  max-width: 120px;
+  height: 60px;
 }
+
+.saudacao p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
 .menu {
-  margin-top: 1em;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
 }
-.menu a {
-  margin: 0 15px;
+
+.menu li a {
   color: white;
   text-decoration: none;
 }
-.menu a.lang {
-  color: #00d4ff;
+
+.menu li a:hover {
+  color: cyan;
 }
+
 .segmentos {
-  padding: 2em;
   text-align: center;
+  padding: 40px 20px;
 }
-.segmentos h2 {
-  margin-bottom: 1em;
+
+.segmentos-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
-.galeria img {
-  width: 200px;
-  margin: 10px;
+
+.segmentos-grid img {
+  width: 300px;
   transition: transform 0.3s ease;
 }
-.galeria img:hover {
+
+.segmentos-grid img:hover {
   transform: scale(1.05);
 }
-.formulario {
-  padding: 2em;
-  background-color: #f0f0f0;
+
+.contato {
+  background-color: #f1f1f1;
+  padding: 40px 20px;
   text-align: center;
 }
-.formulario input, .formulario textarea {
-  width: 80%;
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input, textarea {
+  width: 300px;
   padding: 10px;
-  margin: 10px 0;
 }
-.whatsapp {
-  text-align: center;
-  margin: 2em 0;
+
+button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
 }
