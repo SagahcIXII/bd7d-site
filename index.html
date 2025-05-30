@@ -10,33 +10,40 @@
   <header class="topo">
     <div class="logo-area">
       <img src="img/logo.png" alt="BD7D Logo" class="logo" />
-      <div class="saudacao">
-        <p>Olá! Bem-vindo à BD7D Solutions</p>
-      </div>
     </div>
     <nav>
       <ul class="menu">
         <li><a href="#">Home</a></li>
         <li><a href="#">Sobre Nós</a></li>
         <li><a href="#">Serviços</a></li>
-        <li><a href="https://instagram.com/bd7dsolutions" target="_blank" class="btn-join">Join</a></li>
+        <li><a href="https://instagram.com/bd7dsolutions" target="_blank" class="btn-join">Siga-nos</a></li>
         <li><a href="index-en.html">EN</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="banner">
-      <div class="texto-banner">
-        <h1>Bem-vindo à BD7D Solutions</h1>
-        <p>Desenvolvendo Soluções Inteligentes</p>
-        <a class="whatsapp-btn" href="https://api.whatsapp.com/send?phone=5592981649981&text=Olá%2C+vim+pelo+site+da+BD7D+Solutions+e+gostaria+de+saber+mais." target="_blank">
-          <img src="img/whatsapp.png" alt="WhatsApp" />
-          Fale conosco
-        </a>
+    <!-- SLIDER -->
+    <section class="slider">
+      <div class="slide active" style="background-image: url('img/slide-performance.jpeg');">
+        <div class="slide-text">Performance e Eficiência</div>
+      </div>
+      <div class="slide" style="background-image: url('img/slide-civil.jpeg');">
+        <div class="slide-text">Construção e Reformas</div>
+      </div>
+      <div class="slide" style="background-image: url('img/segmento-eletrica.jpg');">
+        <div class="slide-text">Engenharia Elétrica e Energia</div>
       </div>
     </section>
 
+    <!-- BOTÃO WHATSAPP -->
+    <div class="whatsapp-fixo">
+      <a href="https://api.whatsapp.com/send?phone=5592981649981&text=Olá%2C+vim+pelo+site+da+BD7D+Solutions+e+gostaria+de+saber+mais." target="_blank">
+        <img src="img/whatsapp.png" alt="WhatsApp" />
+      </a>
+    </div>
+
+    <!-- FORMULÁRIO DE CONTATO -->
     <section class="contato">
       <h2>Fale Conosco</h2>
       <form action="https://formsubmit.co/admin@bd7d.com" method="POST">
@@ -49,5 +56,23 @@
       </form>
     </section>
   </main>
+
+  <footer class="rodape">
+    <p>BD7D Solutions &copy; Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- SLIDER SCRIPT -->
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    function showNextSlide() {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }
+
+    setInterval(showNextSlide, 5000);
+  </script>
 </body>
 </html>
