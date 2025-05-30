@@ -1,40 +1,33 @@
-/* Reset básico */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Cabeçalho */
 .topo {
   background-color: black;
   color: white;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   padding: 10px 30px;
   flex-wrap: wrap;
-  align-items: stretch; /* garante altura total para alinhamento */
 }
 
 .logo-area {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .logo {
-  height: 160px;
+  height: 180px;
 }
 
 .saudacao p {
   margin: 0;
   font-size: 18px;
   color: #ccc;
-}
-
-/* Navegação */
-nav {
-  display: flex;
-  align-items: flex-end; /* alinha o menu com a base da faixa preta */
 }
 
 .menu {
@@ -48,36 +41,65 @@ nav {
 .menu li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.menu li a:hover {
+.menu li a:hover,
+.menu li a.btn-join:hover {
   color: cyan;
 }
 
-/* Seção de segmentos */
-.segmentos {
-  text-align: center;
-  padding: 40px 20px;
+.btn-join {
+  background-color: orange;
+  color: white !important;
+  padding: 5px 12px;
+  border-radius: 5px;
 }
 
-.segmentos-grid {
+.banner {
+  background-image: url("img/fundo.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+  text-align: center;
+  color: white;
+  padding: 20px;
 }
 
-.segmentos-grid img {
-  width: 300px;
-  transition: transform 0.3s ease;
+.texto-banner h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
-.segmentos-grid img:hover {
-  transform: scale(1.05);
+.texto-banner p {
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
-/* Seção de contato */
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe57;
+}
+
+.whatsapp-btn img {
+  height: 20px;
+  margin-right: 10px;
+}
+
 .contato {
   background-color: #f1f1f1;
   padding: 40px 20px;
@@ -91,10 +113,10 @@ form {
   gap: 10px;
 }
 
-input,
-textarea {
+input, textarea {
   width: 300px;
   padding: 10px;
+  border: 1px solid #ccc;
 }
 
 button {
