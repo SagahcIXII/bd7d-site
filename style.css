@@ -7,20 +7,27 @@ body {
   background-color: black;
   color: white;
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
+  align-items: flex-end;
   padding: 10px 30px;
   flex-wrap: wrap;
 }
 
 .logo-area {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .logo {
-  height: 200px;
+  height: 180px;
+}
+
+.saudacao p {
+  margin: 0;
+  font-size: 18px;
+  color: #ccc;
 }
 
 .menu {
@@ -34,53 +41,41 @@ body {
 .menu li a {
   color: white;
   text-decoration: none;
-  transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.menu li a:hover {
-  color: cyan;
-  transform: scale(1.1);
-}
-
-.btn-join {
-  background-color: #ff6600;
-  padding: 8px 15px;
-  border-radius: 5px;
-  color: white;
   font-weight: bold;
 }
 
-.banner {
-  position: relative;
-  height: 80vh;
-  overflow: hidden;
+.menu li a:hover,
+.menu li a.btn-join:hover {
+  color: cyan;
 }
 
-.slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  animation: slideFade 15s infinite;
+.btn-join {
+  background-color: orange;
+  color: white !important;
+  padding: 5px 12px;
+  border-radius: 5px;
+}
+
+.banner {
+  background-image: url("img/fundo.jpeg");
   background-size: cover;
   background-position: center;
-  transition: background-image 1s ease-in-out;
-}
-
-.texto-banner {
-  position: relative;
-  z-index: 2;
-  color: white;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding-top: 100px;
+  color: white;
+  padding: 20px;
 }
 
 .texto-banner h1 {
-  font-size: 48px;
+  font-size: 36px;
   margin-bottom: 10px;
 }
 
 .texto-banner p {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
@@ -89,15 +84,20 @@ body {
   align-items: center;
   background-color: #25d366;
   color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
   text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
   font-weight: bold;
-  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe57;
 }
 
 .whatsapp-btn img {
   height: 20px;
+  margin-right: 10px;
 }
 
 .contato {
@@ -116,6 +116,7 @@ form {
 input, textarea {
   width: 300px;
   padding: 10px;
+  border: 1px solid #ccc;
 }
 
 button {
@@ -128,39 +129,4 @@ button {
 
 button:hover {
   background-color: #333;
-}
-
-footer {
-  background-color: #111;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-}
-
-@keyframes slideFade {
-  0%   { background-image: url('img/slide-civil.jpeg'); }
-  33%  { background-image: url('img/slide-performance.jpeg'); }
-  66%  { background-image: url('img/segmento-eletrica.jpg'); }
-  100% { background-image: url('img/slide-civil.jpeg'); }
-}
-
-@media screen and (max-width: 768px) {
-  .topo {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .texto-banner h1 {
-    font-size: 32px;
-  }
-
-  .texto-banner p {
-    font-size: 18px;
-  }
 }
