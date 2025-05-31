@@ -130,3 +130,11 @@ button {
 button:hover {
   background-color: #333;
 }
+
+.rodape {
+  background-color: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
