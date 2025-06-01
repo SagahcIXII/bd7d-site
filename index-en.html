@@ -55,7 +55,20 @@
   <footer class="rodape">
     <p>© 2025 BD7D Solutions. All rights reserved.</p>
   </footer>
-</body>
-</html>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.menu').classList.toggle('show');
+    }
+
+    let slides = document.querySelectorAll('.slide');
+    let index = 0;
+    function cycleSlides() {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }
+    setInterval(cycleSlides, 5000);
+  </script>
 </body>
 </html>
