@@ -24,7 +24,11 @@
   </header>
 
   <main>
-    <section class="banner">
+    <!-- SLIDER AUTOMÁTICO COM TRANSIÇÃO -->
+    <section class="banner-slideshow">
+      <div class="slide active" style="background-image: url('img/slide1.jpg');"></div>
+      <div class="slide" style="background-image: url('img/slide2.jpg');"></div>
+      <div class="slide" style="background-image: url('img/slide3.jpg');"></div>
       <div class="texto-banner">
         <h1>Bem-vindo à BD7D Solutions</h1>
         <p>Desenvolvendo Soluções Inteligentes</p>
@@ -51,6 +55,21 @@
   <footer class="rodape">
     <p>© 2025 BD7D Solutions. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.menu').classList.toggle('show');
+    }
+
+    let slides = document.querySelectorAll('.slide');
+    let index = 0;
+    function cycleSlides() {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }
+    setInterval(cycleSlides, 5000);
+  </script>
 </body>
 </html>
 </body>
