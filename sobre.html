@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BD7D Solutions</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós - BD7D Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .conteudo-sobre {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+
+    .conteudo-sobre h1,
+    .conteudo-sobre h2 {
+      color: #111;
+      margin-top: 40px;
+    }
+
+    .conteudo-sobre ul {
+      padding-left: 20px;
+    }
+
+    .conteudo-sobre li {
+      margin-bottom: 8px;
+    }
+  </style>
 </head>
 <body>
   <header class="topo">
@@ -48,7 +70,11 @@
   <footer class="rodape">
     <p>© 2025 BD7D Solutions. Todos os direitos reservados.</p>
   </footer>
-</body>
-</html>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.menu').classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
