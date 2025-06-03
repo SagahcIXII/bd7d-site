@@ -16,6 +16,14 @@
   transition: filter 0.3s ease;
 }
 
+.logo {
+  height: 100px;
+  transition: height 0.3s ease;
+}
+
+.topo.scrolled .logo {
+  height: 60px;
+}
 
 #top-banner {
   background-color: #742dd2;
