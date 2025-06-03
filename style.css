@@ -1,3 +1,48 @@
+.topo {
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topo.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.topo.scrolled .logo {
+  filter: brightness(0) invert(1); /* ou troque por logo escura */
+}
+
+.topo .logo {
+  transition: filter 0.3s ease;
+}
+
+
+#top-banner {
+  background-color: #742dd2;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  transition: top 0.3s ease;
+}
+
+#top-banner a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#close-banner {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
