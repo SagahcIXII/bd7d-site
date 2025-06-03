@@ -23,9 +23,9 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.topo.scrolled .logo {
-  filter: brightness(0) invert(1); /* ou troque por logo escura */
-}
+/*.topo.scrolled .logo {*/
+  /*filter: brightness(0) invert(1); /* ou troque por logo escura */
+/*}*/
 
 .topo .logo {
   transition: filter 0.3s ease;
