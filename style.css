@@ -1,4 +1,19 @@
 .topo {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu li a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.topo.scrolled .menu li a {
+  color: #333;
+}
+
+.topo {
   background-color: transparent;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -28,11 +43,22 @@
 #top-banner {
   background-color: #742dd2;
   color: white;
-  padding: 10px 20px;
-  font-size: 14px;
+  padding: 12px 20px;
+  font-size: 15px;
   text-align: center;
   position: relative;
-  transition: top 0.3s ease;
+  z-index: 999;
+}
+
+#top-banner button {
+  position: absolute;
+  top: 6px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
 }
 
 #top-banner a {
