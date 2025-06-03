@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="top-banner">
+  <span><strong>New:</strong> <a href="#">Make AI Agents</a> are here! Build adaptive, intelligent automation - available now on all paid plans 🚀</span>
+  <button id="close-banner">×</button>
+  </div>
   <header class="topo">
     <div class="logo-area">
       <img src="img/logo.png" alt="BD7D Logo" class="logo" />
@@ -69,6 +73,11 @@
       slides[index].classList.add('active');
     }
     setInterval(cycleSlides, 5000);
+  </script>
+  <script>
+  document.getElementById("close-banner").onclick = function () {
+    document.getElementById("top-banner").style.display = "none";
+  };
   </script>
 </body>
 </html>
