@@ -312,3 +312,78 @@ button:hover {
     display: block;
   }
 }
+
+.menu-item-balao {
+  position: relative;
+}
+
+.menu-item-balao:hover .submenu-balao {
+  display: block;
+}
+
+.submenu-balao {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.submenu-balao .pico {
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid white;
+}
+
+.submenu-balao ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.submenu-balao li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.submenu-balao .icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.submenu-balao .texto strong {
+  display: block;
+  font-size: 15px;
+  color: #111;
+}
+
+.submenu-balao .texto p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
