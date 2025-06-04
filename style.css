@@ -315,6 +315,7 @@ button:hover {
 
 .menu-item-balao {
   position: relative;
+  padding-bottom: 20px; /* corrige submenu sumir*/
 }
 
 .menu-item-balao:hover .submenu-balao {
@@ -324,7 +325,7 @@ button:hover {
 .submenu-balao {
   display: none;
   position: absolute;
-  top: calc(100% + 12px);
+  top: calc(100% + 12px); /* verificar*/
   left: 50%; /* Valor anteiro era 0 */
   transform: translateX(-50%); /* nova */
   max-width: 90vw; /* nova */
