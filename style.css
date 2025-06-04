@@ -237,3 +237,78 @@ button:hover {
   padding: 15px;
   font-size: 14px;
 }
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu a {
+  display: block;
+  padding: 8px 16px;
+  color: #333 !important;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.submenu a:hover {
+  background-color: #f2f2f2;
+}
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: white;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu li a {
+    color: #333;
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  .menu li .submenu {
+    position: relative;
+    box-shadow: none;
+    background: none;
+    padding-left: 10px;
+  }
+
+  .menu li:hover .submenu {
+    display: none;
+  }
+
+  .menu li:focus-within .submenu,
+  .menu li .submenu.show {
+    display: block;
+  }
+}
