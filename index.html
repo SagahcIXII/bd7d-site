@@ -5,6 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BD7D Solutions</title>
   <link rel="stylesheet" href="style.css" />
+  /* INICIO inserido em 20250604*/
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .conteudo-sobre {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+    .conteudo-sobre h1,
+    .conteudo-sobre h2 {
+      color: #111;
+      margin-top: 40px;
+    }
+    .conteudo-sobre ul {
+      padding-left: 20px;
+    }
+    .conteudo-sobre li {
+      margin-bottom: 8px;
+    }
+    .menu > li {
+      position: relative;
+    }
+    .submenu {
+      display: none;
+      position: absolute;
+      background: white;
+      top: 100%;
+      left: 0;
+      z-index: 10;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 10px;
+      border-radius: 4px;
+    }
+    .menu > li:hover .submenu {
+      display: block;
+    }
+    .submenu a {
+      display: block;
+      padding: 5px 10px;
+      color: #333;
+      text-decoration: none;
+    }
+    .submenu a:hover {
+      background-color: #f2f2f2;
+    }
+    @media (max-width: 768px) {
+      nav, .menu {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+      }
+      .menu.show {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+      }
+      .menu li a {
+        color: #222;
+        font-size: 18px;
+        padding: 10px 0;
+      }
+    }
+  </style>
+  /* FIM inserido em 20250604*/
 </head>
 <body>
   <div id="top-banner">
@@ -15,7 +88,13 @@
     <div class="logo-area">
       <img src="img/logo_wh.png" alt="BD7D Logo" class="logo" id="logo-img" />
     </div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    /*INICIO Alteração 20250604*/
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    /*FIM Alteração 20250604*/
+
+  <!-- MENU ANTERIOR
     <nav>
       <ul class="menu">
         <li><a href="index.html">Home</a></li>
@@ -25,6 +104,44 @@
         <li><a href="index-en.html">EN</a></li>
       </ul>
     </nav>
+  -->
+
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="#">Empresa <i class="fas fa-caret-down"></i></a>
+          <ul class="submenu">
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="#">Missão, Visão, Valores</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Serviços <i class="fas fa-caret-down"></i></a>
+          <ul class="submenu">
+            <li><a href="#">Engenharia</a></li>
+            <li><a href="#">Automação</a></li>
+            <li><a href="#">Energia</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Siga-nos <i class="fas fa-caret-down"></i></a>
+          <ul class="submenu">
+            <li><a href="https://instagram.com/bd7dsolutions" target="_blank">Instagram</a></li>
+            <li><a href="https://linkedin.com/company/bd7dsolutions" target="_blank">LinkedIn</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">🌐 <i class="fas fa-caret-down"></i></a>
+          <ul class="submenu">
+            <li><a href="index.html">Português</a></li>
+            <li><a href="index-en.html">English</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    
   </header>
 
   <main>
