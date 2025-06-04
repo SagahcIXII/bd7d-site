@@ -125,7 +125,7 @@ body {
 
 .menu li a:hover,
 .menu li a.btn-join:hover {
-  color: cyan;
+  color: #000;
 }
 
 .btn-join {
