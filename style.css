@@ -324,8 +324,11 @@ button:hover {
 .submenu-balao {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: calc(100% + 12px);
+  left: 50%; /* Valor anteiro era 0 */
+  transform: translateX(-50%); /* nova */
+  max-width: 90vw; /* nova */
+  box-sizing: border-box; /* nova */
   background: white;
   padding: 15px;
   border-radius: 10px;
