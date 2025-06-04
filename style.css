@@ -406,3 +406,16 @@ button:hover {
   width: 20px;
   height: 20px;
 }
+
+.icone-seta {
+  width: 12px;
+  height: 12px;
+  margin-left: 6px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+/* Gira o ícone ao abrir submenu (opcional) */
+.menu-item-balao:hover .icone-seta {
+  transform: rotate(180deg);
+}
