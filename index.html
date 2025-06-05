@@ -94,7 +94,14 @@
       <i class="fas fa-bars"></i>
     </div>
     <!-- FIM Alteração 20250604 -->
-
+    <nav class="menu-mobile">
+      <ul>
+        <li><a href="#">Empresa</a></li>
+        <li><a href="#">Soluções</a></li>
+        <li><a href="#">Siga-nos</a></li>
+        <li><a href="#">Idioma</a></li>
+      </ul>
+    </nav>
   <!-- MENU ANTERIOR
     <nav>
       <ul class="menu">
@@ -251,7 +258,13 @@
   <footer class="rodape">
     <p>© 2025 BD7D Solutions. Todos os direitos reservados.</p>
   </footer>
-
+  
+  <script>
+  function toggleMenu() {
+    document.querySelector('.menu-mobile').classList.toggle('show');
+  }
+  </script>
+  
   <script>
     function toggleMenu() {
       document.querySelector('.menu').classList.toggle('show');
