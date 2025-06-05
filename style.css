@@ -338,7 +338,7 @@ button:hover {
   background: white;
   padding: 15px; /* era 15*/
   border-radius: 10px;
-  min-width: 190px;
+  min-width: 210px;
   /* width: 300px; */
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   z-index: 1000;
