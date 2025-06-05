@@ -326,13 +326,14 @@ button:hover {
 }
 
 .submenu-balao {
-  display: hidden;
+  /*display: hidden;*/
+  visibility: hidden;
   position: absolute;
   top: calc(100%); /* verificar*/
-  left: 0%; /* Valor anteiro era 50 */
+  left: 30%; /* Valor anteiro era 50 */
   transform: translateX(-50%) translateY(10px); /* nova */
   opacity: 0;
-  /* max-width: 90vw;*/ /* nova */
+  max-width: 90vw; /* nova */
   box-sizing: border-box; /* nova */
   background: white;
   padding: 15px; /* era 15*/
