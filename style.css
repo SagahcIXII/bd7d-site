@@ -328,7 +328,7 @@ button:hover {
   top: calc(100%); /* verificar*/
   left: 0%; /* Valor anteiro era 50 */
   /*transform: translateX(-50%) translateY(10px); /* nova */
-  opscity: 0;
+  opacity: 0;
   /* max-width: 90vw;*/ /* nova */
   box-sizing: border-box; /* nova */
   background: white;
