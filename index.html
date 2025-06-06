@@ -100,14 +100,26 @@
     
     <nav class="menu-mobile" id="menuMobile">
       <ul>
-        <li><a href="sobre.html">🏢 Empresa</a></li>
+        <li class="has-submenu">
+          <a href="#" onclick="toggleSubmenu(event)">Empresa ▾</a>
+          <ul class="submenu-mobile">
+            <li>
+                <a href="sobre.html">
+                  <img src="img/empresa.png" alt=" Sobre Nós" class="icon-img" />
+                  Sobre Nós
+                </a>
+            </li>
+          </ul>
+        </li>
+        
+        <!-- <li><a href="sobre.html">🏢 Empresa</a></li> -->
         
         <li class="has-submenu">
           <a href="#" onclick="toggleSubmenu(event)">Soluções ▾</a>
           <ul class="submenu-mobile">
-            <li><a href="#">📐 Engenharia</a></li>
-            <li><a href="#">🤖 Automação</a></li>
-            <li><a href="#">⚡️ Energia</a></li>
+            <li><a href="#"> Engenharia</a></li>
+            <li><a href="#"> Automação</a></li>
+            <li><a href="#"> Energia</a></li>
           </ul>
         </li>
 
