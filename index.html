@@ -94,26 +94,20 @@
       <i class="fas fa-bars"></i>
     </div>
     <!-- FIM Alteração 20250604 -->
-    <nav class="menu-mobile">
-      <ul>
-        <li><a href="#">Empresa</a></li>
-        <li><a href="#">Soluções</a></li>
-        <li><a href="#">Siga-nos</a></li>
-        <li><a href="#">Idioma</a></li>
-      </ul>
-    </nav>
-  <!-- MENU ANTERIOR
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sobre.html">Sobre Nós</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="https://www.instagram.com/bd7d_solutions/" target="_blank" class="btn-join">Siga-nos</a></li>
-        <li><a href="index-en.html">EN</a></li>
-      </ul>
-    </nav>
-  -->
 
+    <!-- Menu telas pequenas -->
+    <!-- Menu responsivo (visível apenas em telas pequenas) -->
+    <nav class="menu-mobile" id="menuMobile">
+      <ul>
+        <li><a href="sobre.html">Empresa</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="https://instagram.com/bd7d_solutions" target="_blank">Instagram</a></li>
+        <li><a href="https://linkedin.com/company/bd7d-solutions" target="_blank">LinkedIn</a></li>
+        <li><a href="index-en.html">English</a></li>
+      </ul>
+    </nav>
+    
+    <!-- MENU -->
     <nav>
       <ul class="menu">
         <li class="menu-item-balao">
@@ -260,11 +254,13 @@
   </footer>
   
   <script>
-  function toggleMenu() {
-    document.querySelector('.menu-mobile').classList.toggle('show');
-  }
+      function toggleMenu() {
+      const menu = document.getElementById("menuMobile");
+      menu.classList.toggle("show");
+      }
   </script>
   
+  <!--
   <script>
     function toggleMenu() {
       document.querySelector('.menu').classList.toggle('show');
@@ -279,6 +275,8 @@
     }
     setInterval(cycleSlides, 5000);
   </script>
+  -->
+  
   <script>
   document.getElementById("close-banner").onclick = function () {
     document.getElementById("top-banner").style.display = "none";
