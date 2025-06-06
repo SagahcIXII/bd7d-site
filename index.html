@@ -270,6 +270,14 @@
       menu.classList.toggle("show");
       }
   </script>
+
+  <script>
+  function toggleSubmenu(event) {
+    event.preventDefault();
+    const parent = event.target.closest('.has-submenu');
+    parent.classList.toggle('open');
+    }
+  </script>
   
   <!--
   <script>
