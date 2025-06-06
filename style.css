@@ -502,3 +502,19 @@ button:hover {
     display: none !important;
   }
 }
+
+.menu-mobile .submenu-mobile {
+  display: none;
+  padding-left: 20px;
+  background: #f9f9f9;
+}
+
+.menu-mobile .submenu-mobile li {
+  padding: 10px 0;
+  border-bottom: none;
+}
+
+.menu-mobile .has-submenu.open > .submenu-mobile {
+  display: block;
+}
+
