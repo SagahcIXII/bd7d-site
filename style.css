@@ -23,10 +23,6 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/*.topo.scrolled .logo {*/
-  /*filter: brightness(0) invert(1); /* ou troque por logo escura */
-/*}*/
-
 .topo .logo {
   transition: filter 0.3s ease;
 }
@@ -263,11 +259,16 @@ button:hover {
 .submenu a:hover {
   background-color: #f2f2f2;
 }
+
 .menu-toggle {
   display: none;
-  font-size: 28px;
-  color: white;
+  font-size: 32px;
   cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 1001;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -433,15 +434,31 @@ button:hover {
   transform: rotate(180deg);
 }
 
-.menu-mobile {
+/* .menu-mobile {
   display: none;
   background-color: #fff;
   position: absolute;
-  top: 80px; /* ajuste conforme o header */
+  top: 80px; 
   right: 0;
   width: 100%;
   text-align: right;
   z-index: 999;
+}
+*/
+
+.menu-mobile {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  text-align: left;
+  z-index: 1000;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.menu-mobile.show {
+  display: block;
 }
 
 .menu-mobile ul {
@@ -457,8 +474,9 @@ button:hover {
 
 .menu-mobile a {
   text-decoration: none;
-  color: #111;
   font-weight: bold;
+  color: #111;
+  display: block;
 }
 
 .menu-mobile.show {
@@ -479,8 +497,8 @@ button:hover {
   .menu-toggle {
     display: block;
   }
-
-  nav.menu-desktop {
-    display: none;
+  /*nav.menu-desktop {*/
+  .menu {  
+    display: none !important;
   }
 }
