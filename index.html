@@ -323,6 +323,14 @@
     const parent = event.target.closest('.has-submenu');
     parent.classList.toggle('open');
     }
+    let slides = document.querySelectorAll('.slide');
+    let index = 0;
+    function cycleSlides() {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }
+    setInterval(cycleSlides, 5000);
   </script>
   
   <!--
