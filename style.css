@@ -485,12 +485,14 @@ button:hover {
 
 .menu-toggle {
   display: none;
-  font-size: 32px;
+  /*font-size: 32px;*/
   cursor: pointer;
   position: absolute;
   top: 30px;
   right: 30px;
-  z-index: 1000;
+  z-index: 1001;
+  width: 40px; /* define área clicável */
+  height: 40px;
 }
 
 @media (max-width: 768px) {
@@ -518,11 +520,9 @@ button:hover {
   display: block;
 }
 
-.menu-icon-bg {
-    width: 30px; /* Adjust as needed */
-    height: 30px; /* Adjust as needed */
-    background-image: url('img/menu.png');
-    background-size: contain; /* Or 'cover', or specific dimensions like '100% 100%' */
-    background-repeat: no-repeat;
-    background-position: center;
+.menu-icon {
+  width: 28px;         /* ou o tamanho desejado */
+  height: auto;
+  display: block;
 }
+
