@@ -556,3 +556,11 @@ button:hover {
   color: #555;
 }
 
+/* Estilo para os logos de solução (substitui o span.icon) */
+.icon-solucao-img {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
