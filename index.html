@@ -92,7 +92,6 @@
     </div>
     <!-- INICIO Alteração 20250604 -->
     <div class="menu-toggle" onclick="toggleMenu()">
-      <!-- <i class="fas fa-bars"></i> -->
       <img src="img/menu.png" alt="Menu Icon" class="menu-icon">
     </div>
     <!-- FIM Alteração 20250604 -->
@@ -120,7 +119,6 @@
           <!--- 20250622 -->
           <ul class="submenu-mobile">
             <li class="solucao-item">
-              <!--<span class="icon">⚡</span> -->
               <img src="img/logo_infra.png" alt="InfraCore" class="icon-solucao-img">
               <div class="texto">
                 <strong>InfraCore®</strong>
@@ -128,7 +126,6 @@
               </div>
             </li>
             <li class="solucao-item">
-              <!--<span class="icon">🤖</span>-->
               <img src="img/logo_perf.png" alt="Perform+" class="icon-solucao-img">
               <div class="texto">
                 <strong>Perform+®</strong>
@@ -136,7 +133,6 @@
               </div>
             </li>
             <li class="solucao-item">
-              <!--<span class="icon">⚡️</span>-->
               <img src="img/logo_energ.png" alt="Energy+" class="icon-solucao-img">
               <div class="texto">
                 <strong>Energy+®</strong>
@@ -144,18 +140,7 @@
               </div>
           </li>
         </ul>
-            <!--<li><a href="#"> InfraCore®</a></li>
-            <li><a href="#"> Perform+®</a></li>
-            <li>
-              <span class="icon">⚡</span>
-              <div class="texto">
-                <strong>Energy+®</strong>
-                <p>Consultoria e Mercado Livre de Energia<a href="#">Energy+®</a></p>
-              </div>
-            </li>
-          </ul>
-        </li>
-         -->
+        
         <li class="has-submenu">
           <a href="#" onclick="toggleSubmenu(event)">Siga-nos ▾</a>
           <ul class="submenu-mobile">
@@ -296,9 +281,10 @@
       </ul> 
     </nav> 
   </header>
-<!-- MENU VERSÃO PC [FIM] -->
+    <!-- MENU VERSÃO PC [FIM] -->
   <main>
     <!-- SLIDER AUTOMÁTICO COM TRANSIÇÃO -->
+     <!--
     <section class="banner-slideshow">
       <div class="slide active" style="background-image: url('img/slide1.jpeg');"></div>
       <div class="slide" style="background-image: url('img/slide2.jpeg');"></div>
@@ -310,6 +296,24 @@
           <img src="img/whatsapp.png" alt="WhatsApp" />
           Fale conosco
         </a>
+      </div>
+    </section>
+    -->
+    <section class="banner-slideshow">
+        <div class="banner-container">
+        <div class="banner-left">
+        <h1>Bem-vindo à BD7D Solutions</h1>
+        <p>Engenharia inteligente, soluções sob medida.</p>
+        <a class="whatsapp-btn" href="https://api.whatsapp.com/send?phone=5592981649981&text=Olá%2C+vim+pelo+site+da+BD7D+Solutions+e+gostaria+de+saber+mais." target="_blank">
+          <img src="img/whatsapp.png" alt="WhatsApp" />
+          Fale conosco
+        </a>
+        </div>
+        <div class="banner-right">
+         <div class="slide active" style="background-image: url('img/slide1.jpeg');"></div>
+          <div class="slide" style="background-image: url('img/slide2.jpeg');"></div>
+          <div class="slide" style="background-image: url('img/slide3.jpeg');"></div>
+        </div>
       </div>
     </section>
 
@@ -332,7 +336,15 @@
   </main>
   
   <footer class="rodape">
-    <p>© 2025 BD7D Solutions. Todos os direitos reservados.</p>
+    <!--<p>© 2025 BD7D Solutions. Todos os direitos reservados.</p>-->
+    <div class="footer-left">
+      <strong>BD7D Solutions</strong><br>
+      © 2025 BD7D. Todos os direitos reservados.
+    </div>
+  <div class="footer-links">
+      <div><strong>Empresa</strong><br>Sobre Nós<br>Portfólio<br>Contato</div>
+      <div><strong>Serviços</strong><br>Energia<br>Construção<br>Performance</div>
+    </div>
   </footer>
   
   <script>
@@ -357,23 +369,6 @@
     }
     setInterval(cycleSlides, 5000);
   </script>
-  
-  <!--
-  <script>
-    function toggleMenu() {
-      document.querySelector('.menu').classList.toggle('show');
-    }
-
-    let slides = document.querySelectorAll('.slide');
-    let index = 0;
-    function cycleSlides() {
-      slides[index].classList.remove('active');
-      index = (index + 1) % slides.length;
-      slides[index].classList.add('active');
-    }
-    setInterval(cycleSlides, 5000);
-  </script>
-  -->
   
   <script>
   document.getElementById("close-banner").onclick = function () {
